@@ -6,13 +6,6 @@ import './nav.module.scss'
 
 const Header = () => {
     return (
-        // <nav class="menu">
-        //     <ul>
-        //         <li><Link to="/">Blog</Link></li>
-        //         <li><Link to="/about">About</Link></li>
-        //         <li><Link to="https://chantelsky.netlify.com" target="_blank" norel="noopener">Portfolio</Link></li>
-        //     </ul>
-        // </nav>
         <nav className="menu">
             <header className="avatar">
                 <img src={avatar}></img>
