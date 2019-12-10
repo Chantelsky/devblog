@@ -713,15 +713,12 @@ pre tt:after {
     content: "";
 }
 
-.wrapper {
-    display: grid;
-    grid-gap: 40px;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-areas: "header header header"
-        "sidebar content content"
-        "footer footer footer";
-    background-color: #fff;
-    color: #444;
+.header {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 @media only screen and (max-width: 480px) {
