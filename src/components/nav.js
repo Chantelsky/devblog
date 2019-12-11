@@ -9,19 +9,20 @@ const Header = () => {
         <div className="sidebar">
             <nav>
                 <div className="avatar">
-                    <img src={avatar}></img>
+                    <img src={avatar} alt="Chantel"></img>
                     <h2>Chantel Sky</h2>
                 </div>
                 <ul>
-                    <li>hi</li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="https://chantelsky.netlify.com" target="_blank" rel="noopener">Portfolio</Link></li>
                 </ul>
+                <div className="social-media">
+                    <Link to="https://twitter.com/Chantel_sky" target="_blank" rel="noopener"><button type="submit">Follow @chantelsky</button></Link>
+                    <ul>
+                        <li>hello</li>
+                    </ul>
+                </div>
             </nav>
-            <button>Follow @Chantelsky</button>
-            <div className="social-media">
-                <ul>
-                    <li>hello</li>
-                </ul>
-            </div>
         </div>
     )
 }
