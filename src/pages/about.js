@@ -1,11 +1,13 @@
 import React from 'react'
-// import { Link } from 'gatsby'
+import GlobalStyle from '../styles/globalstyles'
+import SideNav from '../components/sidenav'
 
 
 const AboutPage = () => {
     return (
         <div>
-            hello
+            <SideNav></SideNav>
+            <GlobalStyle />
         </div>
     )
 }

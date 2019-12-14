@@ -14,7 +14,7 @@ const Footer = styled.footer`
 position: fixed;
 left: 0;
 bottom: 0;
-width: 260px;
+width: 300px;
 padding-bottom: 2rem;
 `
 
@@ -40,6 +40,8 @@ const Paragraph = styled.p`
 color: #fff;
 text-align: center;
 padding-top: 1rem;
+width: 70%;
+margin: 0 auto;
 `
 
 const footer = () => {
@@ -51,7 +53,7 @@ const footer = () => {
                 <li><a href="https://codepen.io/chantel-sky" target="_blank" rel="noopener noreferrer"><img src={codepen} alt="codepen"></img></a></li>
                 <li><a href="https://www.behance.net/chantelsky" target="_blank" rel="noopener noreferrer"><img src={behance} alt="behance"></img></a></li>
             </UL>
-            <Paragraph>Created with <span role="img" aria-label="emoji">❤️</span> by Chantel Laver</Paragraph>
+            <Paragraph>Created with <span role="img" aria-label="emoji">❤️</span> by Chantel Laver, &copy; 2020</Paragraph>
         </Footer>
     )
 }

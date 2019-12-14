@@ -9,7 +9,9 @@ const CircleImg = styled.img`
 border-radius: 100px;
 height: 200px;
 width: 200px;
-margin-left: 2rem;
+position:relative;
+transform: translate(-50%, 0%);
+left:50%;
 `
 
 const H2 = styled.h2`
@@ -22,7 +24,7 @@ font-weight: normal;
 
 const SideNav = styled.nav`
 height: 100%;
-width: 260px;
+width: 300px;
 position: fixed;
 z-index: 1;
 top: 0;
@@ -52,7 +54,7 @@ const sidenav = () => {
             <CircleImg src={avatar} alt="chantel avatar"></CircleImg>
             <H2>Chantel-Sky</H2>
             <ul>
-                <LI><Link to='/home'>Home</Link></LI>
+                <LI><Link to='/'>Home</Link></LI>
                 <LI><Link to='/about'>About</Link></LI>
                 <LI><a href='https://chantelsky.netlify.com' target="_blank" rel="noopener noreferrer">Portfolio</a></LI>
             </ul>
