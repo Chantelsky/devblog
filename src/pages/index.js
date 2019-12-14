@@ -1,21 +1,12 @@
 import React from "react"
 import GlobalStyle from '../styles/globalstyles'
 
-// const IndexPage = () => {
-//     return (
-//         <GlobalStyle>
-//             <div className="wrapper">
-//                 <h1>hi</h1>
-//             </div>
-//             <GlobalStyle />
-//             )
-//         }
-//         export default IndexPage
+import SideNav from '../components/sidenav'
 
 const IndexPage = () => {
     return (
         <div>
-            <h1>helloooo</h1>
+            <SideNav></SideNav>
             <GlobalStyle />
         </div>
     )
