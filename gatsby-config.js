@@ -5,6 +5,10 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: 'Just another DEV blog',
+    author: 'Chantel Sky'
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-styled-components`,

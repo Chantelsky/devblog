@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useStaticQuery, graphql } from 'gatsby'
 
 const Title = styled.h1`
 text-align: center;
@@ -8,18 +9,28 @@ letter-spacing: 0.2rem;
 font-size: 3rem;
 `
 
-const Para = styled.p`
+const Subheading = styled.p`
 text-align: center;
 color:#A9A9A9;
 `
 
-const header = () => {
+const Header = () => {
+
+    const data = useStaticQuery(graphql`
+    query {
+        site {
+            siteMetadata {
+                title
+            }
+        }
+    }
+    `)
     return (
-        <div>
-            <Title>Just another DEV blog</Title>
-            <Para>A personal blog dedicated to helping Web Developers</Para>
-        </div>
+        <header>
+            <Title>{data.site.siteMetadata.title}</Title>
+            <Subheading>A personal blog dedicated to helping Web Developers</Subheading>
+        </header>
     )
 }
 
-export default header
+export default Header
