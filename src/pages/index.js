@@ -1,19 +1,18 @@
 import React from "react"
 import GlobalStyle from '../styles/globalstyles'
-import SideNav from '../components/sidenav'
-import Header from '../components/header'
-
+import Layout from '../components/layout'
 import styled from 'styled-components'
 
 
-const IndexPage = () => {
-    return (
-        <div>
-            <Header></Header>
-            <SideNav></SideNav>
-            <GlobalStyle />
-        </div >
-    )
-}
 
-export default IndexPage
+const Home = styled.h1`
+margin-left: 25%;`
+
+const Indexpage = () => (
+    <Layout>
+        <Home>Hello</Home>
+        <GlobalStyle />
+    </Layout>
+)
+
+export default Indexpage
