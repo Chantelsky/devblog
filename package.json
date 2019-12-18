@@ -6,7 +6,6 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "gbuild": "env-cmd -f .env.development gatsby build",
     "develop": "env-cmd -f .env.development gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
@@ -16,6 +15,7 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
+    "dotenv": "^8.2.0",
     "gatsby": "^2.18.13",
     "gatsby-plugin-sass": "^2.1.24",
     "gatsby-plugin-styled-components": "^3.1.16",
