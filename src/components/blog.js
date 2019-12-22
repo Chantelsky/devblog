@@ -3,10 +3,8 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
 
 const Wrapper = styled.section
-    `background: #E8E8E8;
+    `
     text-align: center;
-    border-radius: 15px;
-    padding: 10px 100px;
     position: relative;
     top: 150px;
 
@@ -17,6 +15,12 @@ const Wrapper = styled.section
 
     p {
         font-size: 1rem;
+    }
+
+    li {
+        background: #E8E8E8;
+        border-radius: 15px;
+        padding: 10px 100px;
     }
     `
 
