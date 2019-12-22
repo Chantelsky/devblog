@@ -8,7 +8,11 @@ import Blog from '../components/blog'
 
 
 const Home = styled.h1`
-margin-left: 25%;`
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+`
 
 const Indexpage = () => (
     <Layout>

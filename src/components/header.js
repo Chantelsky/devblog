@@ -7,6 +7,7 @@ text-align: center;
 margin-top: 2rem;
 letter-spacing: 0.2rem;
 font-size: 3rem;
+margin-top: 150px;
 `
 
 const Subheading = styled.p`

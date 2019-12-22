@@ -7,7 +7,9 @@ import github from '../images/github-icon.svg'
 const UL = styled.ul`
 display: flex;
 flex-direction: row;
-justify-content: space-evenly;
+justify-content: space-between;
+width: 50%;
+margin: 0 auto;
 `
 
 const Footer = styled.footer`
@@ -26,9 +28,10 @@ left:50%;
 margin-bottom: 2rem;
 background: #38A1F3;
 border: none;
-padding: 15px 32px;
+padding: 5px 15px;
 text-align: center;
 cursor: pointer;
+font-size: .8rem;
 
 & a {
 text-decoration: none;

@@ -1,5 +1,24 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql } from "gatsby"
+import styled from 'styled-components'
+
+const Wrapper = styled.section
+    `background: #E8E8E8;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px 100px;
+    position: relative;
+    top: 150px;
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+    `
 
 const Blog = () => {
     const data = useStaticQuery(graphql`
@@ -16,7 +35,7 @@ const Blog = () => {
         }
     `)
     return (
-        <div>
+        <Wrapper>
             <ol className="blog">
                 {data.allContentfulBlogPost.edges.map((edge) => {
                     return (
@@ -29,7 +48,7 @@ const Blog = () => {
                     )
                 })}
             </ol>
-        </div>
+        </Wrapper>
     )
 }
 
