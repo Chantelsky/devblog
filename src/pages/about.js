@@ -1,15 +1,25 @@
 import React from 'react'
 import GlobalStyle from '../styles/globalstyles'
-import SideNav from '../components/sidenav'
+import Layout from '../components/layout'
+import About from '../components/aboutme'
+import styled from 'styled-components'
 
+const Content = styled.section`
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    `
 
 const AboutPage = () => {
     return (
-        <div>
-            <SideNav></SideNav>
+        <Layout>
+            <Content>
+                <About />
+            </Content>
             <GlobalStyle />
-        </div>
+        </Layout>
     )
 }
 
-export default AboutPage;
+export default AboutPage

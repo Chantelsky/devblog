@@ -9,7 +9,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: 'Just Another DEV Blog',
+    title: 'Just Another Dev Blog',
     author: 'Chantel Sky'
   },
   plugins: [
