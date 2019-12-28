@@ -44,7 +44,7 @@ margin: .5rem;
 }
 
 & a:hover {
-    color: pink;
+    color: #A9A9A9;
 }
 `
 

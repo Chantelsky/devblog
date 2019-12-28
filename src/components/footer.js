@@ -50,13 +50,13 @@ margin: 0 auto;
 const footer = () => {
     return (
         <Footer>
-            <Button><a href="https://twitter.com/chantelsky" target="_blank" rel="noopener noreferrer">Follow @Chantel_sky</a></Button>
+            <Button><a href="https://twitter.com/chantel_sky" target="_blank" rel="noopener noreferrer">Follow @Chantel_sky</a></Button>
             <UL>
                 <li><a href="https://github.com/Chantelsky" target="_blank" rel="noopener noreferrer"><img src={github} alt="github"></img></a></li>
                 <li><a href="https://codepen.io/chantel-sky" target="_blank" rel="noopener noreferrer"><img src={codepen} alt="codepen"></img></a></li>
                 <li><a href="https://www.behance.net/chantelsky" target="_blank" rel="noopener noreferrer"><img src={behance} alt="behance"></img></a></li>
             </UL>
-            <Paragraph>Created with <span role="img" aria-label="emoji">❤️</span> by Sky Laver, &copy; 2020</Paragraph>
+            <Paragraph>Created with <span role="img" aria-label="emoji">❤️</span> by Chantel Laver and powered by GatsbyJS &copy; 2020</Paragraph>
         </Footer>
     )
 }
