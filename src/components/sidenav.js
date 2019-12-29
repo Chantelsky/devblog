@@ -27,7 +27,6 @@ const SidenavContainer = styled.section`
 
     h2 {
         text-align: center;
-        margin: 2rem 0;
         color: #fff;
         font-weight: normal;
     }
@@ -45,6 +44,26 @@ const SidenavContainer = styled.section`
     li a:hover {
         color: #A9A9A9;
     }
+
+    button {
+        position:relative;
+        transform: translate(-50%, -50%);
+        top:50%; 
+        left:50%;
+        margin: 2rem 0;
+        background: #38A1F3;
+        border: none;
+        padding: 5px 15px;
+        text-align: center;
+        cursor: pointer;
+        font-size: .8rem;
+    }
+
+    
+    a {
+    text-decoration: none;
+    color: #fff;
+    }
 `
 
 const sidenav = () => {
@@ -52,6 +71,7 @@ const sidenav = () => {
         <SidenavContainer>
             <img src={avatar} alt="chantel avatar"></img>
             <h2>Chantel-Sky</h2>
+            <button><a href="https://twitter.com/chantel_sky" target="_blank" rel="noopener noreferrer">Follow @Chantel_sky</a></button>
             <ul>
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to='/about'>About</Link></li>

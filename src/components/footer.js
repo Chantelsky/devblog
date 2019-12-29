@@ -13,25 +13,6 @@ const Footercontainer = styled.footer`
         margin: 0 auto;
     }
 
-    button {
-        position:relative;
-        transform: translate(-50%, -50%);
-        top:50%; 
-        left:50%;
-        margin: 2rem 0;
-        background: #38A1F3;
-        border: none;
-        padding: 5px 15px;
-        text-align: center;
-        cursor: pointer;
-        font-size: .8rem;
-    }
-
-    a {
-    text-decoration: none;
-    color: #fff;
-    }
-
     p {
         color: #fff;
         text-align: center;
@@ -44,7 +25,6 @@ const Footercontainer = styled.footer`
 const footer = () => {
     return (
         <Footercontainer>
-            <button><a href="https://twitter.com/chantel_sky" target="_blank" rel="noopener noreferrer">Follow @Chantel_sky</a></button>
             <ul>
                 <li><a href="https://github.com/Chantelsky" target="_blank" rel="noopener noreferrer"><img src={github} alt="github"></img></a></li>
                 <li><a href="https://codepen.io/chantel-sky" target="_blank" rel="noopener noreferrer"><img src={codepen} alt="codepen"></img></a></li>
