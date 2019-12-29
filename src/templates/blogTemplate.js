@@ -4,13 +4,19 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import GlobalStyle from '../styles/globalstyles'
 import Layout from '../components/layout'
 import styled from 'styled-components'
+import Header from '../components/header'
 
-const Wrapper = styled.section`
+const BlogContainer = styled.section`
     position: absolute;
     left: 30%;
     margin-right: -50%;
     text-align: left;
     width: 50%;
+
+    @media (max-width: 1440px) {
+        left: 40%;
+        width: 40%;
+    }
 
     a {
         text-decoration: none;
@@ -44,12 +50,12 @@ const Blog = (props) => {
     }
     return (
         <Layout>
-            <Wrapper>
+            <BlogContainer>
                 <h1>{props.data.contentfulBlogPost.title}</h1>
                 <p>{props.data.contentfulBlogPost.publishedDate}</p>
                 {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
                 <GlobalStyle />
-            </Wrapper>
+            </BlogContainer>
         </Layout>
     )
 }

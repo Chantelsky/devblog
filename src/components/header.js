@@ -11,14 +11,6 @@ const Title = styled.section`
 h1 {
     font-size: 4rem;
 }
-
-@media (max-width: 1440px) {
-    left: 20%;
-
-    h1 {
-        font-size: 3rem;
-    }
-}
 `
 
 const Header = () => {
@@ -32,11 +24,10 @@ const Header = () => {
     }
     `)
     return (
-        <header>
+        <div>
             <Title><h1>{data.site.siteMetadata.title}</h1>
                 <p>A personal blog dedicated to helping Web Developers</p></Title>
-            {/* <Subheading>A personal blog dedicated to helping Web Developers</Subheading> */}
-        </header>
+        </div>
     )
 }
 

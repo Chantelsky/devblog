@@ -7,7 +7,6 @@ import Footer from '../components/footer'
 
 const SidenavContainer = styled.section`
         min-height: 100vh;
-        min-width: 200px;
         max-width: 300px;
         position: fixed;
         z-index: 1;
