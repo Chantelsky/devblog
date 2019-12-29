@@ -5,8 +5,9 @@ import styled from 'styled-components'
 const Wrapper = styled.section`
     text-align: center;
     position: relative;
-    top: 150px;
-    left: 500px;
+    top: 350px;
+    left: 300px;
+    transform: translate(50%,-50%);
 
     a {
         text-decoration: none;

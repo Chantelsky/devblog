@@ -6,10 +6,10 @@ import styled from 'styled-components'
 
 const BlogContainer = styled.section`
     position: absolute;
-    left: 30%;
-    margin-right: -50%;
-    text-align: left;
-    width: 50%;
+    top: 250px;
+    left: 500px;
+    margin: 0 2rem;
+    
 
     a {
         text-decoration: none;
