@@ -2,11 +2,9 @@ import React from 'react'
 import { Link, useStaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
 
-const Wrapper = styled.section
-    `
+const Wrapper = styled.section`
     text-align: center;
     position: relative;
-    top: 150px;
 
     a {
         text-decoration: none;

@@ -18,7 +18,7 @@ const Footercontainer = styled.footer`
         transform: translate(-50%, -50%);
         top:50%; 
         left:50%;
-        margin-bottom: 2rem;
+        margin: 2rem 0;
         background: #38A1F3;
         border: none;
         padding: 5px 15px;

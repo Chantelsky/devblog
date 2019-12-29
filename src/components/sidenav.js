@@ -28,12 +28,11 @@ const SidenavContainer = styled.section`
 
     h2 {
         text-align: center;
-        margin-top: 1rem;
-        margin-bottom: 10rem;
+        margin: 2rem 0;
         color: #fff;
         font-weight: normal;
     }
-    
+
     li {
         text-align: center;
         margin: .5rem;

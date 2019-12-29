@@ -11,8 +11,8 @@ const Home = styled.main`
     display: flex;
     justify-content: center;
     position: relative;
-    left: 80%;
-    top: 30%;
+    left: 70%;
+    top: 0%;
 
     @media (max-width:1440px) {
         left: 55%;
