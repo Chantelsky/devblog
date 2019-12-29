@@ -7,11 +7,12 @@ import Blog from '../components/blog'
 
 
 
-const Home = styled.h1`
-    position: absolute;
+const Home = styled.main`
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 80%;
     top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 `
 
 const Indexpage = () => (

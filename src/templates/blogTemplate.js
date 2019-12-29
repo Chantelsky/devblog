@@ -7,15 +7,17 @@ import styled from 'styled-components'
 
 const Wrapper = styled.section`
     position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 30%;
+    margin-right: -50%;
+    text-align: left;
+    width: 50%;
 
     a {
         text-decoration: none;
         color: #141414;
         font-weight: bold;
     }
+
 `
 
 export const query = graphql`

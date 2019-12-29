@@ -23,8 +23,8 @@ font-weight: normal;
 `
 
 const SideNav = styled.nav`
-height: 100%;
-width: 300px;
+min-height: 100vh;
+min-width: 300px;
 position: fixed;
 z-index: 1;
 top: 0;

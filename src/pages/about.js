@@ -6,7 +6,7 @@ import styled from 'styled-components'
 
 const Content = styled.section`
     position: absolute;
-    top: 60%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     `
@@ -18,7 +18,7 @@ const AboutPage = () => {
                 <About />
             </Content>
             <GlobalStyle />
-        </Layout>
+        </Layout >
     )
 }
 
