@@ -13,6 +13,11 @@ const Home = styled.main`
     position: relative;
     left: 80%;
     top: 30%;
+
+    @media (max-width:1440px) {
+        left: 55%;
+        width: 70%;
+    }
 `
 
 const Indexpage = () => (

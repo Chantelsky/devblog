@@ -20,11 +20,15 @@ margin-top: 1rem;
 margin-bottom: 10rem;
 color: #fff;
 font-weight: normal;
+
+@media (max-width: 1440px) {
+    margin-bottom: 5rem;
+}
 `
 
 const SideNav = styled.nav`
 min-height: 100vh;
-min-width: 300px;
+min-width: 200px;
 position: fixed;
 z-index: 1;
 top: 0;
