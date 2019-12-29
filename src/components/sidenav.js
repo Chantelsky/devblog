@@ -5,65 +5,62 @@ import { Link } from 'gatsby'
 import Footer from '../components/footer'
 
 
-const CircleImg = styled.img`
-border-radius: 100px;
-height: 200px;
-width: 200px;
-position:relative;
-transform: translate(-50%, 0%);
-left:50%;
-`
+const SidenavContainer = styled.section`
+        min-height: 100vh;
+        min-width: 200px;
+        max-width: 300px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: #141414;
+        overflow-x: hidden;
+        padding-top: 20px;
 
-const H2 = styled.h2`
-text-align: center;
-margin-top: 1rem;
-margin-bottom: 10rem;
-color: #fff;
-font-weight: normal;
+    img {
+        border-radius: 100px;
+        height: 200px;
+        width: 200px;
+        position:relative;
+        transform: translate(-50%, 0%);
+        left:50%;
+    }
 
-@media (max-width: 1440px) {
-    margin-bottom: 5rem;
-}
-`
+    h2 {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 10rem;
+        color: #fff;
+        font-weight: normal;
+    }
+    
+    li {
+        text-align: center;
+        margin: .5rem;
+    }
 
-const SideNav = styled.nav`
-min-height: 100vh;
-min-width: 200px;
-position: fixed;
-z-index: 1;
-top: 0;
-left: 0;
-background: #141414;
-overflow-x: hidden;
-padding-top: 20px;
-`
+    li a {
+        text-decoration: none;
+        color: #fff;
+    }
 
-const LI = styled.li`
-text-align: center;
-margin: .5rem;
-
-& a {
-    text-decoration: none;
-    color: #fff;
-}
-
-& a:hover {
-    color: #A9A9A9;
-}
+    li a:hover {
+        color: #A9A9A9;
+    }
 `
 
 const sidenav = () => {
     return (
-        <SideNav>
-            <CircleImg src={avatar} alt="chantel avatar"></CircleImg>
-            <H2>Chantel-Sky</H2>
+        <SidenavContainer>
+            <img src={avatar} alt="chantel avatar"></img>
+            <h2>Chantel-Sky</h2>
             <ul>
-                <LI><Link to='/'>Home</Link></LI>
-                <LI><Link to='/about'>About</Link></LI>
-                <LI><a href='https://chantelsky.netlify.com' target="_blank" rel="noopener noreferrer">Portfolio</a></LI>
+                <li><Link to='/'>Home</Link></li>
+                <li><Link to='/about'>About</Link></li>
+                <li><a href='https://chantelsky.netlify.com' target="_blank" rel="noopener noreferrer">Portfolio</a></li>
             </ul>
             <Footer></Footer>
-        </SideNav>
+        </SidenavContainer>
     )
 }
 
