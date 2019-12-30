@@ -20,6 +20,12 @@ const Footercontainer = styled.footer`
         width: 70%;
         margin: 0 auto;
     }
+
+    @media (max-width: 1024px) {
+        p {
+            padding-top: 5rem;
+        }
+    }
 `
 
 const footer = () => {

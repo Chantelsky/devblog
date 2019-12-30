@@ -23,6 +23,11 @@ const Wrapper = styled.section`
         border-radius: 15px;
         padding: 10px 100px;
     }
+
+    @media (max-width: 1024px) {
+        left: 125px;
+        width: 70%;
+    }
     `
 
 const Blog = () => {

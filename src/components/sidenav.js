@@ -64,6 +64,12 @@ const SidenavContainer = styled.section`
     text-decoration: none;
     color: #fff;
     }
+
+    @media (max-width: 1024px) {
+        img {
+            height: auto;
+        }
+    }
 `
 
 const sidenav = () => {
