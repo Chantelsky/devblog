@@ -76,6 +76,13 @@ const SidenavContainer = styled.section`
             height: auto;
         }
     }
+
+    @media (max-width: 768px) {
+        img {
+            height: 150px;
+            width: 150px;
+        }
+    }
 `
 
 const sidenav = () => {

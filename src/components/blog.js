@@ -24,9 +24,19 @@ const Wrapper = styled.section`
         padding: 10px 100px;
     }
 
+    @media (max-width: 1440px) {
+        left: 100px;
+    }
+
     @media (max-width: 1024px) {
         left: 125px;
         width: 70%;
+    }
+
+    @media (max-width: 768px){
+        left: 150px;
+        top: 400px;
+        width: 50%;
     }
     `
 

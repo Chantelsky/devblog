@@ -10,6 +10,11 @@ const AboutContainer = styled.main`
     @media (max-width: 1024px) {
         left: 350px;
     }
+
+    @media (max-width: 768px) {
+        top: 200px;
+        margin: 0 1rem;
+    }
 `
 
 const AboutMe = () => {

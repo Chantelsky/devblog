@@ -3,10 +3,12 @@ import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const Title = styled.header`
-    position: fixed;
+    position: absolute;
     left: 500px;
     text-align: center;
     transform: translate(50%,50%);
+    background: #fff;
+    z-index: -1;
     
     h1 {
         font-size: 3rem;
@@ -18,6 +20,13 @@ const Title = styled.header`
 
     @media (max-width: 1024px) {
         left: 100px;
+    }
+
+    @media (max-width: 768px) {
+        left: 100px;
+        h1 {
+            font-size: 2rem;
+        }
     }
 `
 

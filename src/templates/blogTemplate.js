@@ -20,11 +20,7 @@ const BlogContainer = styled.section`
     @media (max-width: 1024px) {
         left: 350px;
         top: 200px;
-        position: fixed;
-        height: auto;
-        overflow: auto;
 }
-
 `
 
 export const query = graphql`
