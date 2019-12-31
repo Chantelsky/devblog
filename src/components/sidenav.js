@@ -31,17 +31,17 @@ const SidenavContainer = styled.section`
         font-weight: normal;
     }
 
-    li {
+    .links {
         text-align: center;
         margin: .5rem;
     }
 
-    li a {
+    .links a {
         text-decoration: none;
         color: #fff;
     }
 
-    li a:hover {
+    .links a:hover {
         color: #A9A9A9;
     }
 
@@ -58,7 +58,6 @@ const SidenavContainer = styled.section`
         cursor: pointer;
         font-size: .8rem;
     }
-
     
     a {
     text-decoration: none;
@@ -83,6 +82,29 @@ const SidenavContainer = styled.section`
             width: 150px;
         }
     }
+
+    @media (max-width: 425px) {
+        max-width: 200px;
+        
+        img {
+            height: 100px;
+            width: 100px;
+        }
+
+        button {
+            padding: 5px 10px;
+            margin: 1.5rem 0;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+        }
+        .links {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+}
 `
 
 const sidenav = () => {
@@ -92,9 +114,9 @@ const sidenav = () => {
             <h2>Chantel-Sky</h2>
             <button><a href="https://twitter.com/chantel_sky" target="_blank" rel="noopener noreferrer">Follow @Chantel_sky</a></button>
             <ul>
-                <li><Link to='/'>Home</Link></li>
-                <li><Link to='/about'>About</Link></li>
-                <li><a href='https://chantelsky.netlify.com' target="_blank" rel="noopener noreferrer">Portfolio</a></li>
+                <li class="links"><Link to='/'>Home</Link></li>
+                <li class="links"><Link to='/about'>About</Link></li>
+                <li class="links"><a href='https://chantelsky.netlify.com' target="_blank" rel="noopener noreferrer">Portfolio</a></li>
             </ul>
             <Footer></Footer>
         </SidenavContainer>

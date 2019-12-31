@@ -28,6 +28,12 @@ const Title = styled.header`
             font-size: 2rem;
         }
     }
+
+    @media (max-width: 425px){
+        bottom: 550px;
+        left: 80px;
+        margin: 0 1rem;
+    }
 `
 
 const Header = () => {

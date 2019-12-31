@@ -14,6 +14,10 @@ const AboutContainer = styled.main`
     @media (max-width: 768px) {
         top: 200px;
         margin: 0 1rem;
+
+        h1 {
+            font-size: 1.5rem;
+        }
     }
 `
 
