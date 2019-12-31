@@ -30,9 +30,21 @@ const Title = styled.header`
     }
 
     @media (max-width: 425px){
-        bottom: 550px;
+        /* top: 0px;
         left: 80px;
-        margin: 0 1rem;
+        margin: 0 1rem; */
+        margin: 0 auto;
+        left: 80px;
+        top: 0px;
+        width: 50%;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
     }
 `
 

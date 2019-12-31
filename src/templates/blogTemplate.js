@@ -21,6 +21,16 @@ const BlogContainer = styled.section`
         left: 350px;
         top: 200px;
 }
+
+    @media (max-width: 425px) {
+        left: 85px;
+        border: 2px solid pink;
+        margin: 0 5rem;
+        
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
 `
 
 export const query = graphql`

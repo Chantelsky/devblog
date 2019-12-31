@@ -84,7 +84,7 @@ const SidenavContainer = styled.section`
     }
 
     @media (max-width: 425px) {
-        max-width: 200px;
+        max-width: 150px;
         
         img {
             height: 100px;

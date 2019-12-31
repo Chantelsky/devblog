@@ -43,17 +43,17 @@ const Wrapper = styled.section`
     }
 
     @media (max-width:425px) {
-        top: 300px;
-        width: 100%;
-        left: -40px;
+        top: 350px;
+        width: 50%;
+        left: 110px;
 
         h2 {
             font-size: 1rem;
         }
 
         li {
-        padding: 10px 30px;
-        margin: 1rem 3rem;
+        padding: 10px 20px;
+        /* margin: 1rem 3rem; */
     }
     }
     `
