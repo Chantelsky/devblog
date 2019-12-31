@@ -65,6 +65,12 @@ const SidenavContainer = styled.section`
     color: #fff;
     }
 
+    @media (max-width: 1440px) {
+        button {
+            margin: 1rem 0;
+        }
+    }
+
     @media (max-width: 1024px) {
         img {
             height: auto;

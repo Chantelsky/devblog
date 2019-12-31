@@ -5,8 +5,11 @@ const AboutContainer = styled.main`
     position: absolute;
     top: 250px;
     left: 500px;
-    border: 2px solid pink;
     margin: 0 2rem;
+
+    @media (max-width: 1024px) {
+        left: 350px;
+    }
 `
 
 const AboutMe = () => {

@@ -12,6 +12,10 @@ const Title = styled.header`
         font-size: 3rem;
     }
 
+    @media (max-width: 1440px) {
+        left: 300px;
+    }
+
     @media (max-width: 1024px) {
         left: 100px;
     }
