@@ -42,7 +42,7 @@ const Wrapper = styled.section`
         }
     }
 
-    @media (max-width:425px) {
+    @media only screen and (max-width:425px) and (orientation: portrait) {
         top: 350px;
         width: 50%;
         left: 110px;
@@ -54,7 +54,12 @@ const Wrapper = styled.section`
         li {
         padding: 10px 20px;
         /* margin: 1rem 3rem; */
+        }
     }
+
+    @media only screen and (max-width: 480px) and (orientation: portrait) {
+        top: 400px;
+        left: 125px;
     }
     `
 

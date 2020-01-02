@@ -14,25 +14,22 @@ const Title = styled.header`
         font-size: 3rem;
     }
 
-    @media (max-width: 1440px) {
+    @media only screen and (max-width: 1440px) {
         left: 300px;
     }
 
-    @media (max-width: 1024px) {
+    @media only screen and (max-width: 1024px) {
         left: 100px;
     }
 
-    @media (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         left: 100px;
         h1 {
             font-size: 2rem;
         }
     }
 
-    @media (max-width: 425px){
-        /* top: 0px;
-        left: 80px;
-        margin: 0 1rem; */
+    @media only screen and (max-width: 425px) and (orientation: portrait){
         margin: 0 auto;
         left: 80px;
         top: 0px;

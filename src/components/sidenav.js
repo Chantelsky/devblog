@@ -6,7 +6,7 @@ import Footer from '../components/footer'
 
 
 const SidenavContainer = styled.section`
-        min-height: 100vh;
+        min-height: 100%;
         max-width: 300px;
         position: fixed;
         z-index: 1;
@@ -64,26 +64,26 @@ const SidenavContainer = styled.section`
     color: #fff;
     }
 
-    @media (max-width: 1440px) {
+    @media only screen and (max-width: 1440px) {
         button {
             margin: 1rem 0;
         }
     }
 
-    @media (max-width: 1024px) {
+    @media only screen and (max-width: 1024px) {
         img {
             height: auto;
         }
     }
 
-    @media (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         img {
             height: 150px;
             width: 150px;
         }
     }
 
-    @media (max-width: 425px) {
+    @media only screen and (max-width: 425px) and (orientation: portrait){
         max-width: 150px;
         
         img {

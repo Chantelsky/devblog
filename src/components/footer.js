@@ -7,10 +7,14 @@ import github from '../images/github-icon.svg'
 const Footercontainer = styled.footer`
     ul {
         display: flex;
+    }
+
+    li {
         flex-direction: row;
         justify-content: space-between;
-        width: 50%;
         margin: 0 auto;
+        padding: 5px;
+        width: 50px;
     }
 
     p {
@@ -21,7 +25,7 @@ const Footercontainer = styled.footer`
         margin: 0 auto;
     }
 
-    @media (max-width: 1024px) {
+    @media only screen and (max-width: 1024px) {
         p {
             padding-top: 5rem;
         }
