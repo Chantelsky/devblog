@@ -63,48 +63,6 @@ const SidenavContainer = styled.section`
     text-decoration: none;
     color: #fff;
     }
-
-    @media only screen and (max-width: 1440px) {
-        button {
-            margin: 1rem 0;
-        }
-    }
-
-    @media only screen and (max-width: 1024px) {
-        img {
-            height: auto;
-        }
-    }
-
-    @media only screen and (max-width: 768px) {
-        img {
-            height: 150px;
-            width: 150px;
-        }
-    }
-
-    @media only screen and (max-width: 425px) and (orientation: portrait){
-        max-width: 150px;
-        
-        img {
-            height: 100px;
-            width: 100px;
-        }
-
-        button {
-            padding: 5px 10px;
-            margin: 1.5rem 0;
-        }
-
-        h2 {
-            font-size: 1.25rem;
-        }
-        .links {
-        text-align: center;
-        margin: 0 auto;
-        padding: 0 2rem;
-    }
-}
 `
 
 const sidenav = () => {
